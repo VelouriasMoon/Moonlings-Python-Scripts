@@ -18,10 +18,15 @@ Simply drag the image you want onto the `Channel_Split.py`, it will then output 
 the RGB image will have the RGB channels and a solid Alpha channel, where as the A image will have the Alpha channel copied into the RGB channels and a solid Alpha channel for easy editing.
 #### Channel Merge
 Once your done editing the RGB and or A images you'll want to put them back together. Simply drag both the RGA and A image onto the `Channel_Merge.py` script and it will output the image overwriting the original(assuming you haven't renamed anything). 
-How this work is it uses the frist argument and the RGB and the second as the Alpha, **So make sure to drag the images on RGB first**.
+How this work is it uses the frist argument and the RGB and the second as the Alpha, **So make sure to drag the RGB on first**.
 
 ### Convert to RGBA PNG
-Converts the image into a .png with the RGBA format.
+Converts the image into a .png with the RGBA format. **Requires Pillow**
 
 ### Dump RGBA
-Dumps the R, G, B, and A channels into sperate images.
+Dumps the R, G, B, and A channels into sperate images. **Requires Pillow**
+
+### Channel Choose
+Used to pick and choose what image channels you want. **Requires Pillow and Numpy**
+
+Drag the image onto and bat and input the new vaule for each channel(0 - 255). anything over 255(256+) the image's existing channel will be used.
