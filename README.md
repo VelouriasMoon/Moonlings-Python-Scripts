@@ -19,6 +19,9 @@ the RGB image will have the RGB channels and a solid Alpha channel, where as the
 #### Channel Merge
 Once your done editing the RGB and or A images you'll want to put them back together. Simply drag both the RGA and A image onto the `Channel_Merge.py` script and it will output the image overwriting the original(assuming you haven't renamed anything). 
 How this work is it uses the frist argument and the RGB and the second as the Alpha, **So make sure to drag the RGB on first**.
+#### Channel Split and Merge
+works the same way as the Split script and Merge script but combined into script. **Requires Pillow and Numpy**
+Drag image(or images) onto the .bat and type the choice `Split` or `Merge`.
 
 ### Convert to RGBA PNG
 Converts the image into a .png with the RGBA format. **Requires Pillow**
