@@ -8,7 +8,6 @@ for infile in sys.argv[1:]:
 		data = img.getdata()
 		img.mode = 'RGBA'
 
-		# Suppress specific bands (e.g. (255, 120, 65) -> (0, 120, 0) for g)
 		r = [(d[0], d[0], d[0], 255) for d in data]
 		g = [(d[1], d[1], d[1], 255) for d in data]
 		b = [(d[2], d[2], d[2], 255) for d in data]
